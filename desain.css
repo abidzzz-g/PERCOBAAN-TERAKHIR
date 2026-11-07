@@ -1,0 +1,91 @@
+/* 1. Mengatur tampilan dasar halaman website agar ke tengah */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* Warna latar belakang abu-abu terang */
+    display: flex;
+    justify-content: center;  /* Membuat kartu berada di tengah secara horizontal */
+    align-items: center;      /* Membuat kartu berada di tengah secara vertikal */
+    height: 100vh;            /* Memenuhi tinggi layar komputer */
+    margin: 0;
+}
+
+/* 2. Menghias kotak utama PROFILE CARD */
+.PROFILE.CARD {
+    background-color: #ffffff; /* Warna kartu putih bersih */
+    width: 350px;
+    border-radius: 15px;       /* Membuat sudut kartu melengkung/tidak tajam */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan halus */
+    padding: 30px;
+    text-align: center;        /* Membuat semua teks di dalamnya otomatis ke tengah */
+}
+
+/* 3. Mengatur lingkaran untuk foto profil */
+.p img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;        /* Membuat foto berbentuk lingkaran sempurna */
+    object-fit: cover;         /* Memastikan foto tidak gepeng atau ketarik */
+    border: 4px solid #007bff; /* Memberikan garis tepi biru di sekitar foto */
+    margin-bottom: 15px;
+}
+
+/* 4. Menghias Nama (h1) */
+.profile.name {
+    font-size: 22px;
+    color: #333333;
+    margin: 10px 0 5px 0;
+}
+
+/* 5. Menghias Pekerjaan dan Bio (p) */
+.profile.job {
+    font-size: 14px;
+    color: #007bff;            /* Warna biru untuk profesi */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.profile.bio {
+    font-size: 14px;
+    color: #666666;            /* Warna abu-abu untuk kutipan bio */
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+/* 6. Mengatur tata letak Tombol agar sejajar */
+.profile-buttons {
+    display: flex;
+    gap: 10px;                 /* Memberi jarak antar tombol */
+    justify-content: center;
+}
+
+/* Styling dasar untuk semua tombol */
+.btn-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;          /* Efek halus saat kursor diarahkan ke tombol */
+    flex: 1;                   /* Membuat kedua tombol punya lebar yang sama seimbang */
+}
+
+/* Tombol Utama (Kontak Saya) */
+.primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.primary:hover {
+    background-color: #0056b3; /* Warna berubah sedikit lebih gelap saat disentuh kursor */
+}
+
+/* Tombol Kedua (Portofolio) */
+.secondary {
+    background-color: #e4e6eb;
+    color: #333333;
+}
+
+.secondary:hover {
+    background-color: #d8dadf;
+}
